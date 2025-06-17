@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shift Assignment Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+  <h1>Shift Assignments</h1>
+  <div class="button-group">
+    <button class="refresh-btn" id="refreshBtn" onclick="refreshShifts()">🔄 Refresh</button>
+    <button class="filter-btn" id="filterToggleBtn" onclick="toggleFilter()">🕓 All Shifts</button>
+  </div>
+</div>
+  
+  <div id="loadingIndicator" class="loading" style="display: none;">
+    Loading shifts...
+  </div>
+  
+  <div class="board" id="shiftBoard"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
